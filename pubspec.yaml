@@ -1,0 +1,52 @@
+name: notebook
+description: "My flutter notebook project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  flutter_screenutil: ^5.9.3
+
+  # Core
+  freezed_annotation: ^3.1.0
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.5.4
+  freezed: ^3.1.0
+  riverpod_generator: ^2.6.5
+  custom_lint: ^0.7.6
+  riverpod_lint: ^2.6.5
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+
+  fonts:
+    - family: Pretendard
+      fonts:
+        - asset: assets/fonts/Pretendard-Black.ttf
+        - asset: assets/fonts/Pretendard-Bold.ttf
+        - asset: assets/fonts/Pretendard-ExtraBold.ttf
+        - asset: assets/fonts/Pretendard-ExtraLight.ttf
+        - asset: assets/fonts/Pretendard-Light.ttf
+        - asset: assets/fonts/Pretendard-Medium.ttf
+        - asset: assets/fonts/Pretendard-Regular.ttf
+        - asset: assets/fonts/Pretendard-SemiBold.ttf
+        - asset: assets/fonts/Pretendard-Thin.ttf
