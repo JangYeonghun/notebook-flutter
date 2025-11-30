@@ -18,12 +18,11 @@ class ScaffoldLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Brightness currentBrightness = MediaQuery.platformBrightnessOf(context);
 
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
-        statusBarIconBrightness: currentBrightness == Brightness.dark ? Brightness.light : Brightness.dark,
-        statusBarBrightness: currentBrightness == Brightness.dark ? Brightness.light : Brightness.dark,
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: Brightness.dark,
       ),
     );
 
